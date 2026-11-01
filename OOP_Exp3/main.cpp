@@ -1,7 +1,16 @@
 #include <iostream>
+#include "ccs.h"
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
 
 int main(int argc, char** argv) {
-	return 0;
+    CCS myCCS(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0);
+    
+    do {
+        myCCS.printMenu();
+        myCCS.setCoordinates();
+        myCCS.printCoordinates();
+    } while (myCCS.getChoice() != 5);
+    
+    return 0;
 }

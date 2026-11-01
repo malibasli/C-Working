@@ -1,4 +1,4 @@
-#ifndef
+#ifndef CCS_H
 #define CCS_H
 
 #include <iostream>
@@ -19,7 +19,7 @@ class CCS {
 		string conversionType;
 	
 	public:
-		CSS(double i1,double i2, double i3, double i4, double i5, double i6, int x);
+		CCS(double i1,double i2, double i3, double i4, double i5, double i6, int x);
 		void setCoordinates();
 		void setCs1_item1(double a);
 		void setCs1_item2(double a);
@@ -41,7 +41,7 @@ class CCS {
 	private:
 		void carToSph();
 		void carToCyl();
-		void sphToCar()
+		void sphToCar();
 		void cylToCar();
 		double getRadianFromDegree(double a);
 		double getDegreeFromRadian(double a);
